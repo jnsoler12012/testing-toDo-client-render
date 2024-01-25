@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form';
 import { taskValidation } from '../../utils/validations';
 import ReactDatePicker from 'react-datepicker';
-import { HiXMark } from "Web_React_Icons/hi2";
+import { HiXMark } from "react-icons/hi2";
 import { postCreateTask, postUpdateTask } from '../../../Application/Axios/post';
 
 export default function({ editingTask, close, availableTypes, user, context }) {

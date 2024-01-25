@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
-import { BiCategory } from "Web_React_Icons/bi";
-import { FaArrowDown } from "Web_React_Icons/fa";
-import { MdOutlineAddBox } from "Web_React_Icons/md";
+import { BiCategory } from "react-icons/bi";
+import { FaArrowDown } from "react-icons/fa";
+import { MdOutlineAddBox } from "react-icons/md";
 
 export default function ({ selectedCategories, categories, handleSelectionFilter, createNew }) {
     const [active, setActive] = useState(false);

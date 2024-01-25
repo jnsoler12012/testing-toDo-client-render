@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
-import { BiTask } from "Web_React_Icons/bi";
-import { IoSettingsOutline } from "Web_React_Icons/io5";
-import { TbLogout2 } from "Web_React_Icons/tb";
+import { BiTask } from "react-icons/bi";
+import { IoSettingsOutline } from "react-icons/io5";
+import { TbLogout2 } from "react-icons/tb";
 import { MainContext } from '../../../Infrastructure';
 import ExpandSideBar from './ExpandSideBar';
 import { getAllCategory } from '../../../Application/Axios/get';
@@ -112,7 +112,7 @@ export default function Sidebar() {
                     </div>
                 </Link>
 
-                <div role='side_bar_link' style={{ "height": "40px", "width": "15vw", "borderRadius": "8px", "display": "flex", "alignItems": "center", "justifyContent": "left", "fontWeight": "100", margin: '4px 0' }} className='active:bg-[#f5f5f5] text-[#777] active:text-[#7f56da] hover:cursor-pointer hover:active:bg-[#f5f5f5] hover:bg-[#fafafa]' onClick={(e) => handleLogOut()}>
+                <div role='side_bar_link_logout' style={{ "height": "40px", "width": "15vw", "borderRadius": "8px", "display": "flex", "alignItems": "center", "justifyContent": "left", "fontWeight": "100", margin: '4px 0' }} className='active:bg-[#f5f5f5] text-[#777] active:text-[#7f56da] hover:cursor-pointer hover:active:bg-[#f5f5f5] hover:bg-[#fafafa]' onClick={(e) => handleLogOut()}>
                     <TbLogout2 className='w-[30px] h-[30px] my-[16px] mx-[8px]' />
                     <h3 style={{ "fontSize": "19px", "fontWeight": "500" }}>Log out</h3>
                 </div>

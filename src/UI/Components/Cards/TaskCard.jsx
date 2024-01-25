@@ -1,5 +1,5 @@
 import React from 'react'
-import { CiEdit, CiEraser } from "Web_React_Icons/ci";
+import { CiEdit, CiEraser } from "react-icons/ci";
 
 
 export default function ({ attrs, editTask, deleteTask }) {

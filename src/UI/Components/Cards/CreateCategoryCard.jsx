@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { useForm } from 'react-hook-form';
 import { categoryValidation } from '../../utils/validations';
 import ReactDatePicker from 'react-datepicker';
-import { HiXMark } from "Web_React_Icons/hi2";
+import { HiXMark } from "react-icons/hi2";
 import { postCreateCategory, postCreateTask, postUpdateTask } from '../../../Application/Axios/post';
 
 export default function ({ close, user, context }) {

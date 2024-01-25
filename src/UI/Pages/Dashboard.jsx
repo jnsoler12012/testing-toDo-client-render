@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { MainContext } from '../../Infrastructure';
 import { getAllTaskByUser } from '../../Application/Axios/get';
 import { CreateModifyTaskCard, TaskCard } from '../Components/Cards';
-import { CgAddR } from "Web_React_Icons/cg";
+import { CgAddR } from "react-icons/cg";
 import { deleteTask } from '../../Application/Axios/delete';
 
 export default function () {
@@ -154,7 +154,7 @@ export default function () {
                 {
                     tasks.map(task => <TaskCard attrs={task} key={task.id} editTask={handleEditTask} deleteTask={handleDeleteTask} />)
                 }
-                <div style={{ "height": "50px", "width": "70vw", "border": "1px solid #ccc", "borderRadius": "16px", "display": "flex", "margin": "8px", "boxSizing": "border-box", "alignItems": "center", "justifyContent": "center" }} className='hover:bg-[#eee] hover:cursor-pointer'
+                <div role='add-new-task' style={{ "height": "50px", "width": "70vw", "border": "1px solid #ccc", "borderRadius": "16px", "display": "flex", "margin": "8px", "boxSizing": "border-box", "alignItems": "center", "justifyContent": "center" }} className='hover:bg-[#eee] hover:cursor-pointer'
                     onClick={(e) => setCreationEditionTask(true)}
                 >
                     <CgAddR className='text-[#929292] h-[25px] w-[25px]' />

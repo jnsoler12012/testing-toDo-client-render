@@ -53,7 +53,7 @@ describe('Reset user tests', () => {
 
 
 
-    it('success login user', async () => {
+    it('Resseted password success', async () => {
 
         const data = {
             email: 'test@gmail.com',

@@ -1,14 +1,12 @@
 import React from 'react'
-import { FaBriefcase, FaRegIdCard } from "Web_React_Icons/fa";
-import { LiaUniversitySolid } from "Web_React_Icons/lia";
-import { MdAttachEmail } from "Web_React_Icons/md";
-import { GrUserAdmin, GrUser } from "Web_React_Icons/gr";
+import { FaBriefcase, FaRegIdCard } from "react-icons/fa";
+import { LiaUniversitySolid } from "react-icons/lia";
+import { MdAttachEmail } from "react-icons/md";
+import { GrUserAdmin, GrUser } from "react-icons/gr";
 
 
 export default function ({ user }) {
-    const { createdAt, document, email, id, name, role, state } = user
-
-    console.log(user, new Date(createdAt), createdAt, document, email, id, name, role, state);
+    const { createdAt, email, name } = user
 
     return (
         <>

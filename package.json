@@ -11,7 +11,7 @@
     "predeploy": "npm run build",
     "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js --silent",
     "dev:test": "node  node_modules/jest/bin/jest.js --silent=false --verbose",
-    "dev:test:unit": "node --experimental-vm-modules node_modules/jest/bin/jest.js --silent=false --verbose __tests__/UI/Components/Dropdowns/NotificationDropdown.test.jsx"
+    "dev:test:unit": "node --experimental-vm-modules node_modules/jest/bin/jest.js --silent=false --verbose __tests__/UI/Components/Cards/CardProfile.test.jsx"
   },
   "author": "",
   "license": "ISC",

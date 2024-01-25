@@ -57,7 +57,7 @@ export default function CustomCreateInput({ type, text, id, errors, register, de
             return (
                 <div className="relative w-full lg:w-1/2 px-3 mb-6 md:mb-0 my-[1rem]">
                     <div className="absolute flex right-4 mt-1.5 items-center ml-2 h-[92%] flex-col-reverse flex-wrap content-center justify-center">
-                        <button className="px-1 block focus:outline-none mb-[-8px] lg:mt-[0rem]" onClick={(e) => { e.preventDefault(); setshowPassword(prevState => !prevState) }}>
+                        <button role='password-button' className="px-1 block focus:outline-none mb-[-8px] lg:mt-[0rem]" onClick={(e) => { e.preventDefault(); setshowPassword(prevState => !prevState) }}>
                             {
                                 showPassword
                                     ? (<div>
@@ -81,11 +81,12 @@ export default function CustomCreateInput({ type, text, id, errors, register, de
                             }
                         </button>
                     </div>
-                    <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" forhtml={id}>
+                    <label className="block uppercase tracking-wide text-gray-700 text-xs font-bold mb-2" aria-labelledby={id} forhtml={id} role='text-input'>
                         {text}
                     </label>
                     <input className="appearance-none block w-full bg-gray-200 text-gray-700 border border-gray-200 rounded py-3 px-4 leading-tight focus:outline-none focus:bg-white focus:border-gray-500"
                         id={id}
+                        role='password-input'
                         type={showPassword ? 'text' : 'password'}
                         defaultValue={defaultValue}
                         {...register(id)} />

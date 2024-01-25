@@ -2,8 +2,8 @@ import { yupResolver } from '@hookform/resolvers/yup';
 import React, { useContext, useState } from 'react'
 import { userModificationValidation } from '../../utils/validations';
 import { useForm } from 'react-hook-form';
-import { FiTool } from "Web_React_Icons/fi";
-import { FaXmark } from "Web_React_Icons/fa6";
+import { FiTool } from "react-icons/fi";
+import { FaXmark } from "react-icons/fa6";
 import { postUpdateSystemUser, postUpdateUser } from '../../../Application/Axios/post';
 import { MainContext } from '../../../Infrastructure';
 import { CustomCreateInput } from '../Forms';
@@ -91,6 +91,7 @@ export default function ({ user, context }) {
                                     Cancel
                                 </button>)
                                 : (<button
+                                    role='show-settings'
                                     className="bg-lightBlue-500 text-white active:bg-lightBlue-600 font-bold uppercase text-md px-4 py-2 rounded shadow hover:shadow-md outline-none focus:outline-none ease-linear transition-all duration-150 flex justify-center items-center"
                                     type="button"
                                     onClick={(e) => handleShowEdition(true)}
